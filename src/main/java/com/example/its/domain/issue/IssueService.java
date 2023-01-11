@@ -21,4 +21,8 @@ public class IssueService {
     public void create(String summary, String description) {
         issueRepository.create(summary, description);
     }
+
+    public IssueEntity findById(long issueId) {
+        return issueRepository.findById(issueId);
+    }
 }

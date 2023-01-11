@@ -29,6 +29,7 @@ dependencies {
 	annotationProcessor("org.projectlombok:lombok")
 	implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.0")
 	runtimeOnly("com.h2database:h2")
+	implementation("org.springframework.boot:spring-boot-starter-validation")
 }
 
 tasks.withType<Test> {
