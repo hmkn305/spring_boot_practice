@@ -9,9 +9,14 @@ import java.util.List;
 @RequiredArgsConstructor
 public class IssueService {
 
-    private final IssueRepository issueRepository;
+    private final
+    IssueRepository issueRepository;
 
     public List<IssueEntity> findAll() {
         return issueRepository.findAll();
+    }
+
+    public void create(String summary, String description) {
+        issueRepository.create(summary, description);
     }
 }
